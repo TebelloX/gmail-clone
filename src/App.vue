@@ -4,7 +4,7 @@
     <tbody>
       <tr v-for="email in emails"
           :key="email.id"
-          class="clickable">
+          :class="['clickable', email.read ? 'read' : '']">
           <td>
             <input type="checkbox">
           </td>
@@ -166,7 +166,7 @@ input[type='checkbox']:checked {
   border-collapse: collapse;
 }
 .mail-table tr.read {
-  background-color: #EEE;
+  background-color: red;
 }
 .mail-table tr {
   height: 40px;

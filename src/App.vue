@@ -167,7 +167,7 @@ input[type='checkbox']:checked {
   border-collapse: collapse;
 }
 .mail-table tr.read {
-  background-color: red;
+  background-color: #eee;
 }
 .mail-table tr {
   height: 40px;

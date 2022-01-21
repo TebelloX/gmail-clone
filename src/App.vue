@@ -1,5 +1,14 @@
 <template>
   <h1>VMail Inbox</h1>
+  <table class="mail-table">
+    <tbody>
+      <tr v-for="email in emails"
+          :key="email.id"
+          class="clickable">
+          {{email.subject}}
+          </tr>
+    </tbody>
+  </table>
 </template>
 
 <script>
